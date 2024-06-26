@@ -1,0 +1,31 @@
+# POST http://localhost:8080/ticket/create
+# Content-Type: application/json
+
+# {
+#     "title":"Change Ink",
+#     "description":"Change Ink For The ACC Printer",
+#     "category":"Printer",
+#     "assign":1
+
+# }
+
+# # POST  http://localhost:8080/user/register
+#    POST  http://localhost:8080/user/login
+#  Content-Type: application/json
+
+# { 
+#     "email":"ahmedali@gmail.com",
+#     "password":"123456",
+#     "type":"user"
+# }
+
+   PATCH   http://localhost:8080/user/reset
+ Content-Type: application/json
+
+{ 
+    "email":"ahmedali@gmail.com",
+    "old_password":"123456789",
+    "new_password":"123456789",
+    "renew_password":"1234567"
+}
+GET http://localhost:8080/ticket/alltickets
